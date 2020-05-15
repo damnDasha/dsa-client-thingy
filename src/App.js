@@ -3,6 +3,7 @@ import StartScreen from "./StartScreen";
 import { Route } from "react-router-dom";
 import config from "./config";
 import PetfulContext from "./PetfulContext";
+import Pets from "./Pets";
 import Cats from "./Cats";
 import Dogs from "./Dogs";
 
@@ -45,6 +46,7 @@ class App extends Component {
       <PetfulContext.Provider value={value}>
         <div className="App">
           <Route exact path="/" component={StartScreen} />
+          <Route exact path="/main" component={Pets} />
           <Route exact path="/cats" component={Cats} />
           <Route exact path="/dogs" component={Dogs} />
         </div>
