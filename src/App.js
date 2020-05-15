@@ -15,9 +15,9 @@ class App extends Component {
 
   componentDidMount() {
     Promise.all([
-      fetch(`${config.API_ENDPOINT}/people`),
-      fetch(`${config.API_ENDPOINT}/cats`),
-      fetch(`${config.API_ENDPOINT}/dogs`),
+      fetch(`${config.API_ENDPOINT}/api/people`),
+      fetch(`${config.API_ENDPOINT}/api/pets/cats`),
+      fetch(`${config.API_ENDPOINT}/api/pets/dogs`),
     ])
       .then(([peopleRes, catsRes, dogsRes]) => {
         if (!peopleRes.ok)
