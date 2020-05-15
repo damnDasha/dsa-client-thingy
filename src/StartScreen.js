@@ -8,8 +8,11 @@ function StartScreen(props) {
       <div className="landing-wrapper">
         <h1>petful</h1>
         <p>lets get a pet!</p>
-        <Link id="start" to="/main">
-          <button type="button">look at these bebbys!!</button>{" "}
+        <Link id="start" to="/cats">
+          <button type="button">look at these kitties!!</button>{" "}
+        </Link>{" "}
+        <Link id="start" to="/dogs">
+          <button type="button">look at these doggos!!</button>{" "}
         </Link>{" "}
       </div>
     </div>

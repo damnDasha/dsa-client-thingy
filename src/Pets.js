@@ -19,7 +19,6 @@ export default class MealMain extends Component {
           <h2 id="journal">all the pets</h2>
 
           <ul className="pets"></ul>
-          <li>cat</li>
         </div>
       </section>
     );
